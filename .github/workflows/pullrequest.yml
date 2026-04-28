@@ -55,7 +55,7 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: 17
-      - uses: gradle/actions/wrapper-validation@v5
+      - uses: gradle/actions/wrapper-validation@v6
       - name: Install Android SDK
         uses: hannesa2/action-android/install-sdk@0.1.16.7
       - name: Android Emulator test
@@ -92,6 +92,8 @@ jobs:
         env:
           CLASSIC_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           emulatorApi: ${{ matrix.emulatorApi }}
+          SCREENSHOT_USER: ${{ secrets.SCREENSHOT_USER }}
+          SCREENSHOT_PASSWORD: ${{ secrets.SCREENSHOT_PASSWORD }}
         run: |
           ls -ls extendedSample/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected
           cp extendedSample/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/emulator-5554\ -\ ${{ matrix.emulatorApi }}/* screenshotsToCompare${{ matrix.emulatorApi }}
