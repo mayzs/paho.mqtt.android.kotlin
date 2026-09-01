@@ -53,7 +53,7 @@ jobs:
       - name: set up JDK
         uses: actions/setup-java@v5
         with:
-          distribution: 'adopt'
+          distribution: 'temurin'
           java-version: 17
       - uses: gradle/actions/wrapper-validation@v6.3.0
       - name: Install Android SDK
@@ -129,7 +129,7 @@ jobs:
       - name: set up JDK
         uses: actions/setup-java@v5
         with:
-          distribution: 'adopt'
+          distribution: 'temurin'
           java-version: 17
       - name: Install Android SDK
         uses: hannesa2/action-android/install-sdk@0.17.0
