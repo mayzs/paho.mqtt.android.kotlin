@@ -9,13 +9,13 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:9.3.1")
         classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.10")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.20")
         classpath("org.jlleitschuh.gradle:ktlint-gradle:14.0.1")
     }
 }
 
 plugins {
-    id("com.google.devtools.ksp") version "2.3.11" apply false
+    id("com.google.devtools.ksp") version "2.3.12" apply false
 }
 
 println("Gradle uses Java ${Jvm.current()}")
