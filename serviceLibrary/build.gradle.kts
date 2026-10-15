@@ -10,9 +10,9 @@ plugins {
 android {
     namespace = "info.mqtt.android.service"
     testNamespace = "info.mqtt.android.service.test"
-    compileSdk = 36
+    compileSdk = 37
     defaultConfig {
-        minSdk = 23
+        minSdk = 24
 
         // Android Studio 4.1 doesn"t generate versionName in libraries any more
         // https://developer.android.com/studio/releases/gradle-plugin#version_properties_removed_from_buildconfig_class_in_library_projects
@@ -73,12 +73,12 @@ android {
 dependencies {
     api("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.core:core-ktx:1.18.0")
+    implementation("androidx.core:core-ktx:1.19.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.20")
-    implementation("androidx.work:work-runtime-ktx:2.11.2")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.21")
+    implementation("androidx.work:work-runtime-ktx:2.12.0")
     implementation("com.github.AppDevNext.Logcat:LogcatCoreLib:3.6")
 
     implementation("androidx.room:room-runtime:2.8.5")

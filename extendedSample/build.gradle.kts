@@ -13,9 +13,8 @@ android {
 
     defaultConfig {
         applicationId = "info.mqtt.android.extsample"
-        minSdk = 23
-        compileSdk = 36
-        targetSdk = 36
+        minSdk = 24
+        compileSdk = 37
         versionCode = getGitCommitCount()
         versionName = "${getVersionText()}.$versionCode-${getLatestGitHash()}"
 
@@ -59,10 +58,10 @@ dependencies {
 
     implementation("androidx.appcompat:appcompat:1.8.0")
     implementation("androidx.recyclerview:recyclerview:1.4.0")
-    implementation("androidx.core:core-ktx:1.18.0")
+    implementation("androidx.core:core-ktx:1.19.1")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.4.21")
     implementation("com.github.AppDevNext.Logcat:LogcatCoreUI:3.6")
     implementation("androidx.room:room-runtime:2.8.5")
     implementation("androidx.test.uiautomator:uiautomator:2.4.0")
